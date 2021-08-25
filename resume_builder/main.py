@@ -11,6 +11,7 @@ class MainUI(QMainWindow):
     def __init__(self):
         super(MainUI, self).__init__()
         loadUi('/home/didik/FGA-final-project/resume_builder/ui.ui', self)
+        self.setWindowTitle('FGA Resume Builder')
         self.save_btn.clicked.connect(self.save_action)
         self.foto_btn.clicked.connect(self.foto_action)
 
@@ -78,5 +79,7 @@ class MainUI(QMainWindow):
 
 app = QApplication(sys.argv)
 window = MainUI()
+window.setFixedWidth(280)
+window.setFixedHeight(400)
 window.show()
 app.exec_()
