@@ -1,0 +1,3 @@
+fpdf
+PyQt5
+webbrowser
